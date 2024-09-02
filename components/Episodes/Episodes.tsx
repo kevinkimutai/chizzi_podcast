@@ -54,7 +54,7 @@ const EpisodesItems = [
 
 const Episodes = () => {
   return (
-    <div className="px-3 sm:px-6 md:px-12 py-12">
+    <div className="px-3 sm:px-6 md:px-12 py-12" id="episodes">
       <h2 className="text-4xl font-bold text-amber-400 mb-2">
         Latest Episodes
       </h2>

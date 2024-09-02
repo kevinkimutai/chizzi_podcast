@@ -57,7 +57,7 @@ const merchItems = [
 
 const Merchandise = () => {
   return (
-    <div className="px-3 sm:px-6 md:px-12 py-12">
+    <div className="px-3 sm:px-6 md:px-12 py-12" id="merchandise">
       <h2 className="text-4xl font-bold text-amber-400 mb-2">Merchandise</h2>
       <p className="mb-8 max-w-lg text-slate-500">
         Source our exclusive merch and show your support for the podcast! From
@@ -68,7 +68,7 @@ const Merchandise = () => {
 
       <div className="w-4/5 mx-auto">
         <div className="flex justify-center items-center mx-auto">
-          <p className="p-4 w-[500px] border rounded-xl font-semibold text-center">
+          <p className="p-4 text-lg w-[500px] border border-black rounded-xl font-semibold text-center">
             ordering via website coming soon
           </p>
         </div>

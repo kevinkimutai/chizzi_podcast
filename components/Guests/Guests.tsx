@@ -18,7 +18,10 @@ const guests = [
 
 const Guests = () => {
   return (
-    <div className="px-3 sm:px-6 md:px-12 py-12 bg-gradient-to-r from-[#fffbe6] to-[#f0f0f0]">
+    <div
+      id="guests"
+      className="px-3 sm:px-6 md:px-12 py-12 bg-gradient-to-r from-[#fffbe6] to-[#f0f0f0]"
+    >
       <h2 className="text-4xl font-bold text-amber-400 mb-2">
         Some of our Guests
       </h2>

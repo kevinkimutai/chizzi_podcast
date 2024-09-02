@@ -6,6 +6,7 @@ import Logo from "../../public/logo.png";
 import { Button } from "@/components/ui/button";
 import { Youtube } from "lucide-react";
 import { AiOutlineSpotify } from "react-icons/ai";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,29 +46,32 @@ const Header = () => {
         />
       </div>
       {/* Nav */}
-      <ul className="hidden lg:flex justify-center items-center gap-10 ">
-        <li
+      <div className="hidden lg:flex justify-center items-center gap-10 ">
+        <Link
+          href={"#episodes"}
           className={`${
             isScrolled ? "text-amber-400" : "text-white"
           } font-semibold text-2xl`}
         >
           Episodes
-        </li>
-        <li
+        </Link>
+        <Link
+          href={"#merchandise"}
           className={`${
             isScrolled ? "text-amber-400" : "text-white"
           } font-semibold text-2xl`}
         >
           Merch
-        </li>
-        <li
+        </Link>
+        <Link
+          href={"#guests"}
           className={`${
             isScrolled ? "text-amber-400" : "text-white"
           } font-semibold text-2xl`}
         >
           Guests
-        </li>
-      </ul>
+        </Link>
+      </div>
       {/* Channels */}
       <div className="flex justify-center items-center gap-4">
         <Button className="rounded-xl" variant={"outline"}>

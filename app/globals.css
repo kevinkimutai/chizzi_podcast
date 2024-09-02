@@ -23,3 +23,7 @@
   gap: 1rem; /* Adjust gap as per your design */
   animation: slide 80s linear infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}
