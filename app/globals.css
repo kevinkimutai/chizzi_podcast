@@ -21,7 +21,7 @@
 .animate-slide {
   display: flex;
   gap: 1rem; /* Adjust gap as per your design */
-  animation: slide 80s linear infinite;
+  animation: slide 60s linear infinite;
 }
 
 html {

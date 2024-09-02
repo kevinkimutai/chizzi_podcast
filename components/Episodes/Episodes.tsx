@@ -68,7 +68,7 @@ const Episodes = () => {
           <Link
             href={eps.link}
             key={eps.id}
-            className="w-full md:w-1/2 lg:w-1/4 flex-shrink-0"
+            className="w-3/4 md:w-1/2 lg:w-1/4 flex-shrink-0"
           >
             <Card className="relative w-full overflow-hidden rounded-2xl">
               <Image
