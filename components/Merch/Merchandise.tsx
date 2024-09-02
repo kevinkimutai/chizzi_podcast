@@ -57,16 +57,26 @@ const merchItems = [
 
 const Merchandise = () => {
   return (
-    <div className="px-12 py-12">
+    <div className="px-3 sm:px-6 md:px-12 py-12">
       <h2 className="text-4xl font-bold text-amber-400 mb-2">Merchandise</h2>
-      <p className="mb-8">source our merch</p>
+      <p className="mb-8 max-w-lg text-slate-500">
+        Source our exclusive merch and show your support for the podcast! From
+        stylish apparel to unique accessories, each item is crafted with our
+        listeners in mind. Grab your favorites today and carry a piece of the
+        podcast with you.
+      </p>
 
       <div className="w-4/5 mx-auto">
+        <div className="flex justify-center items-center mx-auto">
+          <p className="p-4 w-[500px] border rounded-xl font-semibold text-center">
+            ordering via website coming soon
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {merchItems.map((m) => (
             <div
               key={m.indx}
-              className="relative overflow-hidden rounded-xl bg-amber-200 group "
+              className="relative overflow-hidden rounded-lg bg-amber-200 group "
             >
               <Link href="#" className="absolute inset-0 z-10">
                 <span className="sr-only">View</span>

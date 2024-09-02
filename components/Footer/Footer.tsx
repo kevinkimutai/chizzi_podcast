@@ -6,31 +6,22 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import LogoImg from "@/public/logo.png";
 
 export default function Footer() {
   return (
     <footer className="w-full bg-gradient-to-r from-[#fffbe6] to-[#f0f0f0] py-12 md:py-16 lg:py-20">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-primary">Episodes</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  Episode 1: The Beginning
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  Episode 2: The Journey
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  Episode 3: The Destination
-                </Link>
-              </li>
-            </ul>
+          <div className="flex justify-center items-center space-y-4">
+            <Image
+              src={LogoImg}
+              alt="logo"
+              height={400}
+              width={400}
+              className="object-contain max-w-[200px]"
+            />
           </div>
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-primary">Newsletter</h4>
